@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | Urban Grind</title>
+    <link rel="stylesheet" href="css\styles.css">
+</head>
+<body onload="loadCheckout()"> <header>
+        <nav>
+            <div class="logo">Urban Grind</div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>Checkout</h2>
+            
+            <div style="background:var(--secondary-color); padding:15px; margin-bottom:20px; border-radius: 5px;">
+                <h3>Order Summary</h3>
+                <p>Total Items: <strong id="checkout-items">0</strong></p>
+                <p>Total Cost: <strong id="checkout-total">$0.00</strong></p>
+            </div>
+
+            <form onsubmit="processOrder(event)">
+                <h3>Shipping Details</h3>
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Shipping Address</label>
+                    <textarea id="address" rows="3" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="payment">Amount Being Paid ($)</label>
+                    <input type="number" id="payment" step="0.01" required readonly>
+                </div>
+
+                <div style="margin-top:20px;">
+                    <button type="submit" class="btn">Confirm & Check Out</button>
+                    <button type="reset" class="btn btn-secondary">Clear All</button>
+                    <a href="cart.html" class="btn btn-danger">Cancel</a>
+                    <a href="index.html" class="btn btn-secondary" style="float:right;">Close</a>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer><p>&copy; 2025 Urban Grind</p></footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

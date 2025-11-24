@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | Urban Grind</title>
+    <link rel="stylesheet" href="css\styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            
+           <div class="logo" style="cursor: pointer;" onclick="window.location.href='index.html'">
+            Urban Grind
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>Our Premium Selection</h2>
+            <div class="product-grid">
+                
+                <div class="product-card">
+                    <img src="assets/Espresso.png" alt="Espresso">
+                    <h3>Espresso Roast</h3>
+                    <p>Rich, dark, and intense.</p>
+                    <span class="price">$15.00</span>
+                    <button class="btn" onclick="addToCart(1, 'Espresso Roast', 15.00)">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="assets/Medium.png" alt="Medium Roast">
+                    <h3>Medium Roast</h3>
+                    <p>Smooth and balanced flavor.</p>
+                    <span class="price">$14.00</span>
+                    <button class="btn" onclick="addToCart(2, 'Medium Roast', 14.00)">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="assets/Decaf.png" alt="Decaf">
+                    <h3>Decaf Blend</h3>
+                    <p>All the taste, none of the jitters.</p>
+                    <span class="price">$16.00</span>
+                    <button class="btn" onclick="addToCart(3, 'Decaf Blend', 16.00)">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="assets/French.png" alt="French Press">
+                    <h3>Glass French Press</h3>
+                    <p>Brew coffee the classic way.</p>
+                    <span class="price">$25.00</span>
+                    <button class="btn" onclick="addToCart(4, 'French Press', 25.00)">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="assets/Caramel.png" alt="Syrup">
+                    <h3>Caramel Syrup</h3>
+                    <p>Sweeten your morning brew.</p>
+                    <span class="price">$5.00</span>
+                    <button class="btn" onclick="addToCart(5, 'Caramel Syrup', 5.00)">Add to Cart</button>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <footer><p>&copy; 2025 Urban Grind</p></footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
